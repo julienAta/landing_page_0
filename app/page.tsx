@@ -2,10 +2,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap w-full h-screen">
-      <div className="w-full">
-        <div className="text-7xl p-10">Landing page</div>
-        <div className="w-1/2 p-10">
+    <div className="flex flex-wrap w-full ">
+      <div className="w-full  h-screen">
+        <div className="text-7xl pt-32 pb-5 text-slate-50 ">Popop App</div>
+        <div className="text-xl py-5  text-slate-300 ">
+          Never miss an event!
+        </div>
+        <div className="w-1/2 text-md  text-slate-500 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tincidunt fringilla turpis lobortis viverra. Fusce suscipit diam
           tortor, quis accumsan augue porta accumsan. Mauris condimentum ipsum
@@ -18,7 +21,12 @@ export default function Home() {
         </div>
       </div>
       <div className="w-1/2 flex justify-center">Pricing</div>
-      <div className="w-1/2  flex justify-center">About us</div>
+      <div className="w-1/2  flex justify-center">
+        About us
+        <div>
+          <Image src="/assetmoon.svg" width={200} height={200} alt="Logo" />
+        </div>
+      </div>
     </div>
   );
 }
